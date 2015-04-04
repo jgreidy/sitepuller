@@ -1,7 +1,7 @@
 name = Sitepuller
-description = Move Drupal sites from remote servers to the local machine
+description = Pull Drupal sites from a remote server to the local server
 core = 7.x
-package = Utility
+package = Utilities
 version = 7.x-1.0-alpha1
 project = sitepuller
 dependencies[] = ctools
@@ -85,4 +85,3 @@ features[variable][] = node_preview_sitepuller_task
 features[variable][] = node_submitted_sitepuller_local
 features[variable][] = node_submitted_sitepuller_remote
 features[variable][] = node_submitted_sitepuller_task
-project path = /Users/jgreidy/Documents/projects/sitepuller
