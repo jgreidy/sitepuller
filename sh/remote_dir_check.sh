@@ -11,12 +11,15 @@ if [ $# -eq 3 ]; then
 	user="$1"
 	mach="$2"
 	path="$3"
+	myerror=0
 	echo 'start;'
-	ssh "${user}@${mach}" [ -d \""${path}"\" ] || error exit 1
-	error="$?"
-	echo 'done'
+	#/usr/bin/ssh "${user}@${mach}" "test -d \"${path}\" || exit 1"
+	ssh "${user}@${mach}" ls
+	myerror="$?"
+	pwd
+	echo "done $myerror"
 else
-	error=3
+	myerror=3
 fi
-[ "$error" -eq 0 ] || echo "remote_dir_check failed"
-exit "$error"
+[ "$myerror" -eq 0 ] || echo "remote_dir_check failed"
+exit "$myerror"

@@ -26,9 +26,13 @@ function sitepuller_action_check_remote_site($node) {
 	$path = $wrapper->field_sitepuller_remote_root->value();
 	$module = drupal_get_path('module', 'sitepuller');
 	$scripts =  drupal_realpath($module . '/sh');
-	$cmd = "$scripts/remote_dir_check.sh $user $mach $path";
+	$cmd = "/bin/bash $scripts/remote_dir_check.sh $user $mach $path";
+	$cmd = "ssh $user@$mach date";
+	$cmd = escapeshellcmd($cmd);
+	//$cmd = "which ssh";
 	$output='';
 	$error='';
-	exec($cmd, $output, $error);
+	//exec($cmd, $output, $error);
+	$output = shell_exec($cmd);
 	dsm (array('the node is' => $node, 'command' => $cmd, 'error' => $error, 'output' => $output));
 }
