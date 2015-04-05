@@ -30,12 +30,40 @@ function sitepuller_action_check_remote_site($node) {
 	$module = drupal_get_path('module', 'sitepuller');
 	$scripts =  drupal_realpath($module . '/sh');
 	$cmd = "/bin/bash $scripts/remote_dir_check.sh $user $mach $path";
-	$cmd = "ssh $user@$mach date";
+	$cmd = "ssh $user@$mach test -d \"$path\" || exit 1";
 	$cmd = escapeshellcmd($cmd);
 	//$cmd = "which ssh";
 	$output='';
 	$error='';
 	//exec($cmd, $output, $error);
-	$output = shell_exec($cmd);
 	dsm (array('the node is' => $node, 'command' => $cmd, 'error' => $error, 'output' => $output));
+
+
+$ssh = new Net_SSH2("$mach");
+if ($ssh->isConnected()) dsm('connected 1');
+// keyfile must be id_rsa (private key) - absolute path
+$keyfile = file_get_contents('/Users/jgreidy/.ssh/id_rsa');
+if (empty($keyfile)) { 
+	dsm('no keyfile');
+	return;
+}
+$key = new Crypt_RSA();
+// password must be the one set for id_rsa above
+$key->setPassword('xxx');
+$key->loadKey($keyfile);
+if (!$ssh->login($user,$key)) {
+	$allErr = $ssh->getErrors();
+    dsm(array('Login Failed', $allErr));
+    return;
+}
+
+if ($ssh->isConnected()) dsm('connected 2');
+
+$pwd = $ssh->exec('pwd');
+$err1 = $ssh->getStdError();
+$ls = $ssh->exec("test -d \"$path\" || echo 'no path'");
+$err2 = $ssh->getStdError();
+$allErr = $ssh->getErrors();
+dsm(array($pwd, $err1, $ls, $err2, $allErr));
+
 }
