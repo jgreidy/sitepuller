@@ -28,7 +28,7 @@ function sitepuller_rules_action_info() {
 					),
 				),
 			'provides' => array(
-				'message' => array(
+				'sitepuller_message' => array(
 					'type' => 'text',
 					'label' => t('Message'),
 					)
@@ -39,31 +39,50 @@ function sitepuller_rules_action_info() {
 }
 
 function sitepuller_action_save_user($node) {
+	dsm('hello from sitepuller_action_save_user 1');
 	$wrapper = entity_metadata_wrapper('node', $node);
+	dsm('got wrapper');
 	$rsa_private = $wrapper->field_sitepuller_rsa_private_key->value();
+	dsm($rsa_private);
 	$passphrase = $wrapper->field_sitepuller_rsa_passphrase->value();
+	dsm($passphrase);
 	$key_file = $wrapper->field_sitepuller_encryption_key->value();
+	dsm('here');
 
-	$message = array();
+	$sitepuller_message = array();
+	$sitepuller_message[] = $key_file;
+	dsm($sitepuller_message);
 	// be sure the private key file exists
-	if (!file_exists($rsa_private)) $message[] = t("can't find private key @key", array('@key' => $rsa_private));
+	if (!file_exists($rsa_private)) {
+		$sitepuller_message[] = t("can't find private key @key", array('@key' => $rsa_private));
+		dsm('no private key');
+	}
+	dsm('yes private key');
 
 	// be sure key file exists
 	if (file_exists($key_file)) {
 		$hash = md5(file_get_contents($key_file));
+		dsm($hash);
 		$cipher = new Crypt_AES(CRYPT_AES_MODE_ECB);
 		$cipher->setKey($hash);
 		$wrapper->field_sitepuller_rsa_passphrase->set($cipher->encrypt($passphrase));
-		node_save($node);
-		$message[] = t("Stored encrypted passphrase.");
+		$wrapper->save();
+		//$nid = $node->nid;
+		// $mynode =  node_load($nid);
+		// $wrapper2 = entity_metadata_wrapper('node', $mynode);
+		// $wrapper2->field_sitepuller_rsa_passphrase->set($cipher->encrypt($passphrase));
+		// node_save($mynode);
+		$sitepuller_message[] = t("Stored encrypted passphrase.");
 	}
 	else {
-		$message[] = t("can't find entropy file @file", array('@file' -> $key_file));
+		$sitepuller_message[] = t("can't find entropy file @file", array('@file' => $key_file));
 	}
 
-	return array {
-		'message' => implode("\r",$message);
-	}
+	dsm (array('final:',$sitepuller_message));
+
+	return array (
+		'sitepuller_message' => implode("\r",$sitepuller_message),
+		);
 }
  
 function sitepuller_action_check_remote_site($node) {
