@@ -83,7 +83,45 @@ function sitepuller_action_save_user($node) {
 		'sitepuller_message' => implode("\r",$sitepuller_message),
 		);
 }
- 
+
+/**
+ * open an ssh connection to the machine
+ * 	machine - string - name of remote machine
+ *	remote_user - string - user to log in as on remote machines
+ *	user_node - loaded node - local sitepuller user
+ *
+ *  returns Net_SSH2 ssh object or FALSE
+ */
+function _sitepuller_get_ssh($machine, $remote_user, $user_node) {
+	$wrapper = entity_metadata_wrapper('node', $user_node);
+	$rsa_private = $wrapper->field_sitepuller_rsa_private_key->value();
+	$passphrase = $wrapper->field_sitepuller_rsa_passphrase->value();
+	$entropy = $wrapper->field_sitepuller_encrypt_entropy->value();
+
+	if (($entropy_file = file_get_contents($entropy)) === FALSE) {
+		return FALSE;
+	}
+	$hash = md5($entropy_file);
+	$cipher = new Crypt_Blowfish();
+	$cipher->setKey($hash);
+	$packed = hex2bin($passphrase);
+	$decrypted = $cipher->decrypt($packed);
+	if (($keyfile = file_get_contents($rsa_private)) === FALSE) {
+		return FALSE;
+	}
+	
+	$key = new Crypt_RSA();
+	$key->setPassword($decrypted);
+	$key->loadKey($keyfile);
+
+	$ssh = new Net_SSH2("$machine");
+	if (!$ssh->login($remote_user, $key)) {
+	    return FALSE;
+	}
+
+	return $ssh;
+}
+
 function sitepuller_action_check_remote_site($node) {
 	$wrapper = entity_metadata_wrapper('node', $node);
 
