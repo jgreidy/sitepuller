@@ -2,7 +2,7 @@
 set_include_path(get_include_path() . PATH_SEPARATOR . 'phpseclib');
 
 include('Net/SSH2.php');
-include('Crypt/AES.php');
+include('Crypt/Blowfish.php');
 
 /**
  * Implement hook_rules_action_info().
