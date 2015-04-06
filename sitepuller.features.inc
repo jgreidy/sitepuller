@@ -42,6 +42,14 @@ function sitepuller_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'sitepuller_user' => array(
+      'name' => t('Sitepuller User'),
+      'base' => 'node_content',
+      'description' => t('Information about a user account on the local machine.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   drupal_alter('node_info', $items);
   return $items;
