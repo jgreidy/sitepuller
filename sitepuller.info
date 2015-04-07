@@ -15,6 +15,7 @@ dependencies[] = list
 dependencies[] = options
 dependencies[] = rules
 dependencies[] = sitepuller
+dependencies[] = sitepuller_tools
 dependencies[] = strongarm
 dependencies[] = text
 features[ctools][] = strongarm:strongarm:1
