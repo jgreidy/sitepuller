@@ -641,174 +641,12 @@ If the local database it not initialized, leave a copy of this database in the t
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_user-field_sitepuller_encrypt_entropy'
-  $field_instances['node-sitepuller_user-field_sitepuller_encrypt_entropy'] = array(
-    'bundle' => 'sitepuller_user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'A file that can be reliably be found on your disk somewhere (not available over the network or web accessible). The contents of this file will be used to encrypt and decrypt the RSA passphrase above. If the file gets deleted just make a different one, come back here and enter the passphrase again.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_encrypt_entropy',
-    'label' => 'Encryption Entropy File',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'node-sitepuller_user-field_sitepuller_rsa_passphrase'
-  $field_instances['node-sitepuller_user-field_sitepuller_rsa_passphrase'] = array(
-    'bundle' => 'sitepuller_user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter the passphrase you used to create your RSA public/private key pair.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_rsa_passphrase',
-    'label' => 'RSA passphrase',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance: 'node-sitepuller_user-field_sitepuller_rsa_private_key'
-  $field_instances['node-sitepuller_user-field_sitepuller_rsa_private_key'] = array(
-    'bundle' => 'sitepuller_user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Absolute path to your ssh key file for RSA. eg. /Users/myuser/.ssh/id_rsa',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_rsa_private_key',
-    'label' => 'RSA Private Key File',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => -1,
-    ),
-  );
-
-  // Exported field_instance: 'node-sitepuller_user-field_sitepuller_user_name'
-  $field_instances['node-sitepuller_user-field_sitepuller_user_name'] = array(
-    'bundle' => 'sitepuller_user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'The name of your user account.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_user_name',
-    'label' => 'User Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => -4,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('A file that can be reliably be found on your disk somewhere (not available over the network or web accessible). The contents of this file will be used to encrypt and decrypt the RSA passphrase above. If the file gets deleted just make a different one, come back here and enter the passphrase again.');
   t('Absolute path to the directory on the local machine where the Drupal site\'s index.php is located. eg. /users/myuser/Sites/devdesktop/main1
 NO TRAILING SLASH');
   t('Absolute path to the directory where the Drupal site\'s index.php is located. eg. /server/mysite/htdocs.
 NO TRAILING SLASH');
-  t('Absolute path to your ssh key file for RSA. eg. /Users/myuser/.ssh/id_rsa');
   t('Copy the database from the remote site to the local machine. 
 If the local site is up and running, install this database in the local site.
 If the local database it not initialized, leave a copy of this database in the temporary folder for later use.');
@@ -817,8 +655,6 @@ If the local database it not initialized, leave a copy of this database in the t
   t('Directory where sitepuller can store temporary files on the remote host machine.');
   t('Drupal site on a remote machine that will be the source.');
   t('Drupal site on the local machine that will be the target.');
-  t('Encryption Entropy File');
-  t('Enter the passphrase you used to create your RSA public/private key pair.');
   t('Hostname');
   t('Local Site');
   t('Name of ssh user on the remote machine. You must be set up to ssh to the remote machine without a password prompt. 
@@ -831,17 +667,13 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
   t('Pull Private Files');
   t('Pull Public Files');
   t('Pull the Drupal code, libraries, modules, themes.');
-  t('RSA Private Key File');
-  t('RSA passphrase');
   t('Remote Site');
   t('Site Name');
   t('Site Root Directory');
   t('Site name');
   t('Subsites');
   t('Temporary Directory');
-  t('The name of your user account.');
   t('User');
-  t('User Name');
   t('Which subsites to pull. Leave blank for all subsites.');
 
   return $field_instances;

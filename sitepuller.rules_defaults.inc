@@ -25,21 +25,5 @@ function sitepuller_default_rules_configuration() {
       ]
     }
   }');
-  $items['rules_sitepuller_check_user_on_save'] = entity_import('rules_config', '{ "rules_sitepuller_check_user_on_save" : {
-      "LABEL" : "Sitepuller check user on save",
-      "PLUGIN" : "reaction rule",
-      "OWNER" : "rules",
-      "TAGS" : [ "sitepuller" ],
-      "REQUIRES" : [ "rules" ],
-      "ON" : {
-        "node_insert--sitepuller_user" : { "bundle" : "sitepuller_user" },
-        "node_update--sitepuller_user" : { "bundle" : "sitepuller_user" }
-      },
-      "DO" : [
-        { "sitepuller_action_save_user" : [] },
-        { "drupal_message" : { "message" : "Message: [sitepuller-message:value]", "type" : "warning" } }
-      ]
-    }
-  }');
   return $items;
 }

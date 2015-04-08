@@ -10,27 +10,6 @@
 function sitepuller_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_sitepuller_encrypt_entropy'
-  $field_bases['field_sitepuller_encrypt_entropy'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_sitepuller_encrypt_entropy',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
   // Exported field_base: 'field_sitepuller_local_site_name'
   $field_bases['field_sitepuller_local_site_name'] = array(
     'active' => 1,
@@ -299,48 +278,6 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_rsa_passphrase'
-  $field_bases['field_sitepuller_rsa_passphrase'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_sitepuller_rsa_passphrase',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_sitepuller_rsa_private_key'
-  $field_bases['field_sitepuller_rsa_private_key'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_sitepuller_rsa_private_key',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
   // Exported field_base: 'field_sitepuller_subsites'
   $field_bases['field_sitepuller_subsites'] = array(
     'active' => 1,
@@ -424,27 +361,6 @@ function sitepuller_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_sitepuller_user_name'
-  $field_bases['field_sitepuller_user_name'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_sitepuller_user_name',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
   );
 
   return $field_bases;
