@@ -14,14 +14,14 @@ function sitepuller_default_rules_configuration() {
       "PLUGIN" : "reaction rule",
       "OWNER" : "rules",
       "TAGS" : [ "sitepuller" ],
-      "REQUIRES" : [ "devel", "sitepuller", "rules" ],
+      "REQUIRES" : [ "devel", "rules" ],
       "ON" : {
         "node_insert--sitepuller_remote" : { "bundle" : "sitepuller_remote" },
         "node_update--sitepuller_remote" : { "bundle" : "sitepuller_remote" }
       },
       "DO" : [
         { "devel_debug" : { "value" : [ "node" ] } },
-        { "sitepuller_action_check_remote_site" : { "node" : [ "node" ] } }
+        { "sitepuller_action_check_remote_site" : [] }
       ]
     }
   }');
@@ -30,17 +30,13 @@ function sitepuller_default_rules_configuration() {
       "PLUGIN" : "reaction rule",
       "OWNER" : "rules",
       "TAGS" : [ "sitepuller" ],
-      "REQUIRES" : [ "sitepuller", "rules" ],
+      "REQUIRES" : [ "rules" ],
       "ON" : {
         "node_insert--sitepuller_user" : { "bundle" : "sitepuller_user" },
         "node_update--sitepuller_user" : { "bundle" : "sitepuller_user" }
       },
       "DO" : [
-        { "sitepuller_action_save_user" : {
-            "USING" : { "node" : [ "node" ] },
-            "PROVIDE" : { "sitepuller_message" : { "sitepuller_message" : "Message" } }
-          }
-        },
+        { "sitepuller_action_save_user" : [] },
         { "drupal_message" : { "message" : "Message: [sitepuller-message:value]", "type" : "warning" } }
       ]
     }
