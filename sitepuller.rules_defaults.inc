@@ -20,8 +20,12 @@ function sitepuller_default_rules_configuration() {
         "node_update--sitepuller_remote" : { "bundle" : "sitepuller_remote" }
       },
       "DO" : [
-        { "devel_debug" : { "value" : [ "node" ] } },
-        { "sitepuller_action_check_remote_site" : [] }
+        { "sitepuller_tools_action_check_remote_site" : {
+            "USING" : { "node" : [ "node" ] },
+            "PROVIDE" : { "sitepuller_tools_message" : { "sitepuller_tools_message" : "Message" } }
+          }
+        },
+        { "drupal_message" : { "message" : "Sitepuller: [sitepuller-tools-message:value]" } }
       ]
     }
   }');
