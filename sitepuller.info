@@ -12,6 +12,7 @@ dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = list
+dependencies[] = node
 dependencies[] = options
 dependencies[] = rules
 dependencies[] = rules_admin
