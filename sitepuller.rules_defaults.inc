@@ -14,7 +14,7 @@ function sitepuller_default_rules_configuration() {
       "PLUGIN" : "reaction rule",
       "OWNER" : "rules",
       "TAGS" : [ "sitepuller" ],
-      "REQUIRES" : [ "devel", "rules" ],
+      "REQUIRES" : [ "sitepuller_tools", "rules" ],
       "ON" : {
         "node_insert--sitepuller_remote" : { "bundle" : "sitepuller_remote" },
         "node_update--sitepuller_remote" : { "bundle" : "sitepuller_remote" }
