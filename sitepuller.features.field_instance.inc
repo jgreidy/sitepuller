@@ -422,7 +422,7 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 5,
@@ -467,7 +467,7 @@ If the local database it not initialized, leave a copy of this database in the t
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 4,
@@ -483,7 +483,7 @@ If the local database it not initialized, leave a copy of this database in the t
       ),
     ),
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Pull the public files eg. /sites/default/files',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -510,7 +510,7 @@ If the local database it not initialized, leave a copy of this database in the t
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 6,
@@ -526,7 +526,7 @@ If the local database it not initialized, leave a copy of this database in the t
       ),
     ),
     'deleted' => 0,
-    'description' => 'Copy the files from the Private file system.',
+    'description' => 'Copy the files from the Private file system. (Drupal 7 only.)',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -553,7 +553,7 @@ If the local database it not initialized, leave a copy of this database in the t
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 7,
@@ -695,7 +695,7 @@ NO TRAILING SLASH');
   t('Copy the database from the remote site to the local machine. 
 If the local site is up and running, install this database in the local site.
 If the local database it not initialized, leave a copy of this database in the temporary folder for later use.');
-  t('Copy the files from the Private file system.');
+  t('Copy the files from the Private file system. (Drupal 7 only.)');
   t('Database Connect String');
   t('Directory where sitepuller can store temporary files on the local machine. eg. /tmp');
   t('Directory where sitepuller can store temporary files on the remote host machine.');
@@ -713,6 +713,7 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
   t('Pull Private Files');
   t('Pull Public Files');
   t('Pull the Drupal code, libraries, modules, themes.');
+  t('Pull the public files eg. /sites/default/files');
   t('Remote Site');
   t('Site Name');
   t('Site Root Directory');

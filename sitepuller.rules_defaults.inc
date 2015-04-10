@@ -49,5 +49,25 @@ function sitepuller_default_rules_configuration() {
       ]
     }
   }');
+  $items['rules_sitepuller_perform_task_on_task_save'] = entity_import('rules_config', '{ "rules_sitepuller_perform_task_on_task_save" : {
+      "LABEL" : "Sitepuller: Perform task on task save",
+      "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
+      "TAGS" : [ "sitepuller" ],
+      "REQUIRES" : [ "sitepuller_tools", "rules" ],
+      "ON" : {
+        "node_insert--sitepuller_task" : { "bundle" : "sitepuller_task" },
+        "node_update--sitepuller_task" : { "bundle" : "sitepuller_task" }
+      },
+      "DO" : [
+        { "sitepuller_tools_action_save_task" : {
+            "USING" : { "node" : [ "node" ] },
+            "PROVIDE" : { "sitepuller_tools_message" : { "sitepuller_tools_message" : "Message" } }
+          }
+        },
+        { "drupal_message" : { "message" : "[sitepuller-tools-message:value]" } }
+      ]
+    }
+  }');
   return $items;
 }
