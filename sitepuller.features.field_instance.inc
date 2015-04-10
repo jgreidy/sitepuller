@@ -10,6 +10,51 @@
 function sitepuller_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_local_db_connec'
+  $field_instances['node-sitepuller_local-field_sitepuller_local_db_connec'] = array(
+    'bundle' => 'sitepuller_local',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'String used to connect to the database. You can get this by going to the site/subsite and typing this at the command line: <br />
+drush sql-connect <br />
+The result will look something like:  <br />
+mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
+Place that string here.
+',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sitepuller_local_db_connec',
+    'label' => 'Database Connect String',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 120,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 9,
+    ),
+  );
+
   // Exported field_instance: 'node-sitepuller_local-field_sitepuller_local_site_name'
   $field_instances['node-sitepuller_local-field_sitepuller_local_site_name'] = array(
     'bundle' => 'sitepuller_local',
@@ -651,6 +696,7 @@ NO TRAILING SLASH');
 If the local site is up and running, install this database in the local site.
 If the local database it not initialized, leave a copy of this database in the temporary folder for later use.');
   t('Copy the files from the Private file system.');
+  t('Database Connect String');
   t('Directory where sitepuller can store temporary files on the local machine. eg. /tmp');
   t('Directory where sitepuller can store temporary files on the remote host machine.');
   t('Drupal site on a remote machine that will be the source.');
@@ -671,6 +717,12 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
   t('Site Name');
   t('Site Root Directory');
   t('Site name');
+  t('String used to connect to the database. You can get this by going to the site/subsite and typing this at the command line: <br />
+drush sql-connect <br />
+The result will look something like:  <br />
+mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
+Place that string here.
+');
   t('Subsites');
   t('Temporary Directory');
   t('User');
