@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Sitepuller feature.
+ */
+
+include_once 'sitepuller.features.inc';
