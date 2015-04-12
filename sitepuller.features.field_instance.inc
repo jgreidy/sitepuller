@@ -59,7 +59,7 @@ function sitepuller_field_default_field_instances() {
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.
+Place that string here once the database is created and the site is initialized.
 ',
     'display' => array(
       'default' => array(
@@ -79,7 +79,7 @@ Place that string here.
     'entity_type' => 'node',
     'field_name' => 'field_sitepuller_local_db_connec',
     'label' => 'Database Connect String',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -91,7 +91,7 @@ Place that string here.
         'size' => 120,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 6,
     ),
   );
 
@@ -172,7 +172,7 @@ NO TRAILING SLASH',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -216,6 +216,49 @@ NO TRAILING SLASH',
         'size' => 60,
       ),
       'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_use_make_file'
+  $field_instances['node-sitepuller_local-field_sitepuller_use_make_file'] = array(
+    'bundle' => 'sitepuller_local',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'If the site does not already exist, user the drush make file below to prepare the site. Note: this does not create the database or initialize the site.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sitepuller_use_make_file',
+    'label' => 'Create an empty site using a drush make file',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
       'weight' => 4,
     ),
   );
@@ -736,18 +779,21 @@ NO TRAILING SLASH');
 If the local site is up and running, install this database in the local site.
 If the local database it not initialized, leave a copy of this database in the temporary folder for later use.');
   t('Copy the files from the Private file system. (Drupal 7 only.)');
+  t('Create an empty site using a drush make file');
   t('Database Connect String');
   t('Directory where sitepuller can store temporary files on the local machine. eg. /tmp');
   t('Directory where sitepuller can store temporary files on the remote host machine.');
   t('Drupal site on a remote machine that will be the source.');
   t('Drupal site on the local machine that will be the target.');
   t('Hostname');
+  t('If the site does not already exist, user the drush make file below to prepare the site. Note: this does not create the database or initialize the site.');
   t('Local Site');
   t('Name of ssh user on the remote machine. You must be set up to ssh to the remote machine without a password prompt. 
 See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2');
   t('Name of the Drupal site on the remote machine. ');
   t('Name of the remote server where the Drupal site is located.');
   t('Name of the site on the local machine. eg. main1');
+  t('Path to drush make file');
   t('Pull Code');
   t('Pull Database');
   t('Pull Private Files');
@@ -762,7 +808,7 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.
+Place that string here once the database is created and the site is initialized.
 ');
   t('Subsites');
   t('Temporary Directory');
