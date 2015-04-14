@@ -27,3 +27,4 @@ projects[sitepuller_tools][version] = "develop"
 
 projects[strongarm][version] = "2.0"
 
+projects[views][version] = "3.10"
