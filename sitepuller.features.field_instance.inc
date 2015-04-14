@@ -553,7 +553,7 @@ Place that string here once the database is created and the site is initialized.
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -598,7 +598,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 4,
+      'weight' => 6,
     ),
   );
 
@@ -641,7 +641,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -684,51 +684,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_subsites'
-  $field_instances['node-sitepuller_task-field_sitepuller_subsites'] = array(
-    'bundle' => 'sitepuller_task',
-    'default_value' => array(
-      0 => array(
-        'value' => 'default',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Which subsites to pull. Leave blank for all subsites.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_subsites',
-    'label' => 'Subsites',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 9,
     ),
   );
 
@@ -771,7 +727,51 @@ If the local database it not initialized, leave a copy of this database in the t
         'size' => 60,
       ),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_task_local_sub'
+  $field_instances['node-sitepuller_task-field_sitepuller_task_local_sub'] = array(
+    'bundle' => 'sitepuller_task',
+    'default_value' => array(
+      0 => array(
+        'value' => 'default',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Which subsite of the local site to replace? If there are no subsites leave it as default.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sitepuller_task_local_sub',
+    'label' => 'Local Subsite',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 4,
     ),
   );
 
@@ -814,6 +814,50 @@ If the local database it not initialized, leave a copy of this database in the t
     ),
   );
 
+  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_task_remo_sub'
+  $field_instances['node-sitepuller_task-field_sitepuller_task_remo_sub'] = array(
+    'bundle' => 'sitepuller_task',
+    'default_value' => array(
+      0 => array(
+        'value' => 'default',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Select a subsite on the remote site. If there are no subsites leave this as default.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sitepuller_task_remo_sub',
+    'label' => 'Remote Subsite',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Absolute path to the directory on the local machine where the Drupal site\'s index.php is located. eg. /users/myuser/Sites/devdesktop/main1
@@ -833,6 +877,7 @@ If the local database it not initialized, leave a copy of this database in the t
   t('Hostname');
   t('If the site does not already exist, user the drush make file below to prepare the site. Note: this does not create the database or initialize the site.');
   t('Local Site');
+  t('Local Subsite');
   t('Name of ssh user on the remote machine. You must be set up to ssh to the remote machine without a password prompt. 
 See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2');
   t('Name of the Drupal site on the remote machine. ');
@@ -846,19 +891,26 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
   t('Pull the Drupal code, libraries, modules, themes.');
   t('Pull the public files eg. /sites/default/files');
   t('Remote Site');
+  t('Remote Subsite');
+  t('Select a subsite on the remote site. If there are no subsites leave this as default.');
   t('Site Name');
   t('Site Root Directory');
   t('Site name');
+  t('String used to connect to the database for this local subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
+drush sql-connect <br />
+The result will look something like:  <br />
+mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
+Place that string here once the database is created and the site is initialized.
+');
   t('String used to connect to the database. You can get this by going to the site/subsite and typing this at the command line: <br />
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
 Place that string here once the database is created and the site is initialized.
 ');
-  t('Subsites');
   t('Temporary Directory');
   t('User');
-  t('Which subsites to pull. Leave blank for all subsites.');
+  t('Which subsite of the local site to replace? If there are no subsites leave it as default.');
 
   return $field_instances;
 }
