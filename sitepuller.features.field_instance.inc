@@ -463,7 +463,7 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -508,7 +508,50 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 6,
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_drupal'
+  $field_instances['node-sitepuller_task-field_sitepuller_pull_drupal'] = array(
+    'bundle' => 'sitepuller_task',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Pull the Drupal core code.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sitepuller_pull_drupal',
+    'label' => 'Pull Drupal Core',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 5,
     ),
   );
 
@@ -650,7 +693,7 @@ If the local database it not initialized, leave a copy of this database in the t
       ),
     ),
     'deleted' => 0,
-    'description' => 'Which subsite of the local site to replace? If there are no subsites leave it as default.',
+    'description' => 'Which subsite of the local site to replace?',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -733,7 +776,7 @@ If the local database it not initialized, leave a copy of this database in the t
       ),
     ),
     'deleted' => 0,
-    'description' => 'Select a subsite on the remote site. If there are no subsites leave this as default.',
+    'description' => 'Select a subsite on the remote site.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -795,19 +838,21 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
   t('Path to drush make file');
   t('Pull Code');
   t('Pull Database');
+  t('Pull Drupal Core');
   t('Pull Private Files');
   t('Pull Public Files');
   t('Pull the Drupal code, libraries, modules, themes.');
+  t('Pull the Drupal core code.');
   t('Pull the public files eg. /sites/default/files');
   t('Remote Site');
   t('Remote Subsite');
-  t('Select a subsite on the remote site. If there are no subsites leave this as default.');
+  t('Select a subsite on the remote site.');
   t('Site Name');
   t('Site Root Directory');
   t('Site name');
   t('Temporary Directory');
   t('User');
-  t('Which subsite of the local site to replace? If there are no subsites leave it as default.');
+  t('Which subsite of the local site to replace?');
 
   return $field_instances;
 }
