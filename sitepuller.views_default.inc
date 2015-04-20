@@ -47,7 +47,7 @@ function sitepuller_views_default_views() {
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['label'] = 'Run Task';
   $handler->display->display_options['fields']['nid']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['nid']['alter']['text'] = 'Pull';
+  $handler->display->display_options['fields']['nid']['alter']['text'] = 'Create Pull Script';
   $handler->display->display_options['fields']['nid']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['path'] = 'sitepuller_tools/[nid]/run';
   /* Field: Content: Title */

@@ -424,6 +424,140 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
     ),
   );
 
+  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_local_db_connec'
+  $field_instances['node-sitepuller_task-field_sitepuller_local_db_connec'] = array(
+    'bundle' => 'sitepuller_task',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'String used to connect to the database for this local subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
+drush sql-connect <br />
+The result will look something like:  <br />
+mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
+Place that string here.
+',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sitepuller_local_db_connec',
+    'label' => 'Local Database Connection',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_private_files'
+  $field_instances['node-sitepuller_task-field_sitepuller_private_files'] = array(
+    'bundle' => 'sitepuller_task',
+    'default_value' => array(
+      0 => array(
+        'value' => 'private/files',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Path to private files for a subsite. This path is relative to <site root>/sites/[subsite name]/<br />
+It is generally something like private/files or ../../../drupal_files (above <site root>)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sitepuller_private_files',
+    'label' => 'Private Files Path',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_public_files'
+  $field_instances['node-sitepuller_task-field_sitepuller_public_files'] = array(
+    'bundle' => 'sitepuller_task',
+    'default_value' => array(
+      0 => array(
+        'value' => 'files',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Path to public files for a subsite. This path is relative to <site root>/sites/[subsite name]/',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sitepuller_public_files',
+    'label' => 'Public Files Path',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_code'
   $field_instances['node-sitepuller_task-field_sitepuller_pull_code'] = array(
     'bundle' => 'sitepuller_task',
@@ -463,7 +597,7 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -508,7 +642,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 7,
+      'weight' => 9,
     ),
   );
 
@@ -551,7 +685,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -594,7 +728,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
@@ -637,7 +771,52 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 9,
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_remote_db'
+  $field_instances['node-sitepuller_task-field_sitepuller_remote_db'] = array(
+    'bundle' => 'sitepuller_task',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'String used to connect to the database for this remote subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
+drush sql-connect <br />
+The result will look something like:  <br />
+mysql --user=drupaluser --password=xyz123 --database=music --host=127.0.0.1 --port=33067 <br />
+Place that string here.
+',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sitepuller_remote_db',
+    'label' => 'Remote Database Connection',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
     ),
   );
 
@@ -680,7 +859,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'size' => 60,
       ),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -724,7 +903,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -828,6 +1007,7 @@ If the local database it not initialized, leave a copy of this database in the t
   t('Drupal site on the local machine that will be the target.');
   t('Hostname');
   t('If the site does not already exist, user the drush make file below to prepare the site. Note: this does not create the database or initialize the site.');
+  t('Local Database Connection');
   t('Local Site');
   t('Local Subsite');
   t('Name of ssh user on the remote machine. You must be set up to ssh to the remote machine without a password prompt. 
@@ -836,6 +1016,11 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
   t('Name of the remote server where the Drupal site is located.');
   t('Name of the site on the local machine. eg. main1');
   t('Path to drush make file');
+  t('Path to private files for a subsite. This path is relative to <site root>/sites/[subsite name]/<br />
+It is generally something like private/files or ../../../drupal_files (above <site root>)');
+  t('Path to public files for a subsite. This path is relative to <site root>/sites/[subsite name]/');
+  t('Private Files Path');
+  t('Public Files Path');
   t('Pull Code');
   t('Pull Database');
   t('Pull Drupal Core');
@@ -844,12 +1029,25 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
   t('Pull the Drupal code, libraries, modules, themes.');
   t('Pull the Drupal core code.');
   t('Pull the public files eg. /sites/default/files');
+  t('Remote Database Connection');
   t('Remote Site');
   t('Remote Subsite');
   t('Select a subsite on the remote site.');
   t('Site Name');
   t('Site Root Directory');
   t('Site name');
+  t('String used to connect to the database for this local subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
+drush sql-connect <br />
+The result will look something like:  <br />
+mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
+Place that string here.
+');
+  t('String used to connect to the database for this remote subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
+drush sql-connect <br />
+The result will look something like:  <br />
+mysql --user=drupaluser --password=xyz123 --database=music --host=127.0.0.1 --port=33067 <br />
+Place that string here.
+');
   t('Temporary Directory');
   t('User');
   t('Which subsite of the local site to replace?');
