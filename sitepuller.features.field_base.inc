@@ -31,6 +31,27 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_sitepuller_local_db_connec'
+  $field_bases['field_sitepuller_local_db_connec'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sitepuller_local_db_connec',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_sitepuller_local_site_name'
   $field_bases['field_sitepuller_local_site_name'] = array(
     'active' => 1,
@@ -94,6 +115,48 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_sitepuller_private_files'
+  $field_bases['field_sitepuller_private_files'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sitepuller_private_files',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_sitepuller_public_files'
+  $field_bases['field_sitepuller_public_files'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sitepuller_public_files',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_sitepuller_pull_code'
   $field_bases['field_sitepuller_pull_code'] = array(
     'active' => 1,
@@ -126,6 +189,31 @@ function sitepuller_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_sitepuller_pull_database',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => '',
+        1 => '',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_boolean',
+  );
+
+  // Exported field_base: 'field_sitepuller_pull_drupal'
+  $field_bases['field_sitepuller_pull_drupal'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sitepuller_pull_drupal',
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -192,6 +280,27 @@ function sitepuller_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
+  );
+
+  // Exported field_base: 'field_sitepuller_remote_db'
+  $field_bases['field_sitepuller_remote_db'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sitepuller_remote_db',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_sitepuller_remote_host'
