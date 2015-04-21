@@ -14,7 +14,7 @@ projects[entity][version] = "1.6"
 
 projects[entityreference][version] = "1.1"
 
-projects[features][version] = "2.4"
+projects[features][version] = "2.5"
 
 projects[rules][version] = "2.9"
 
