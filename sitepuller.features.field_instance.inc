@@ -1092,7 +1092,9 @@ mysql --user=drupaluser --password=xyz123 --database=music --host=127.0.0.1 --po
 Place that string here.
 ');
   t('Temporary Directory');
+  t('This ssh user has sudo powers on this machine.');
   t('User');
+  t('User can sudo');
   t('Which subsite of the local site to replace?');
 
   return $field_instances;
