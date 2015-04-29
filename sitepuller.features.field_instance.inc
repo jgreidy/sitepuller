@@ -10,7 +10,8 @@
 function sitepuller_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_drush_make_file'
+  // Exported field_instance:
+  // 'node-sitepuller_local-field_sitepuller_drush_make_file'
   $field_instances['node-sitepuller_local-field_sitepuller_drush_make_file'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => NULL,
@@ -90,7 +91,8 @@ function sitepuller_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_local_site_root'
+  // Exported field_instance:
+  // 'node-sitepuller_local-field_sitepuller_local_site_root'
   $field_instances['node-sitepuller_local-field_sitepuller_local_site_root'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => NULL,
@@ -218,7 +220,8 @@ NO TRAILING SLASH',
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_remote-field_sitepuller_remote_host'
+  // Exported field_instance:
+  // 'node-sitepuller_remote-field_sitepuller_remote_host'
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_host'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -299,7 +302,8 @@ NO TRAILING SLASH',
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_remote-field_sitepuller_remote_site'
+  // Exported field_instance:
+  // 'node-sitepuller_remote-field_sitepuller_remote_site'
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_site'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -425,7 +429,8 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_local_db_connec'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_local_db_connec'
   $field_instances['node-sitepuller_task-field_sitepuller_local_db_connec'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
@@ -469,7 +474,8 @@ Place that string here.
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_private_files'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_private_files'
   $field_instances['node-sitepuller_task-field_sitepuller_private_files'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -601,7 +607,8 @@ It is generally something like private/files or ../../../drupal_files (above <si
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_database'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_pull_database'
   $field_instances['node-sitepuller_task-field_sitepuller_pull_database'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -906,7 +913,8 @@ Place that string here.
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_task_remo_site'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_task_remo_site'
   $field_instances['node-sitepuller_task-field_sitepuller_task_remo_site'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
