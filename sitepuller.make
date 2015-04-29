@@ -27,4 +27,4 @@ projects[sitepuller_tools][version] = "master"
 
 projects[strongarm][version] = "2.0"
 
-projects[views][version] = "3.10"
+projects[views][version] = "3.11"
