@@ -443,7 +443,9 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.
+Place that string here.<br \\>
+Once the field has been encrypted and stored you\'ll see \'(use the stored connect string)\' here which you can change to a new connect string if necessary.
+
 ',
     'display' => array(
       'default' => array(
@@ -524,7 +526,8 @@ It is generally something like private/files or ../../../drupal_files (above <si
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_public_files'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_public_files'
   $field_instances['node-sitepuller_task-field_sitepuller_public_files'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -657,7 +660,8 @@ If the local database it not initialized, leave a copy of this database in the t
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_drupal'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_pull_drupal'
   $field_instances['node-sitepuller_task-field_sitepuller_pull_drupal'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -743,7 +747,8 @@ If the local database it not initialized, leave a copy of this database in the t
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_private'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_pull_private'
   $field_instances['node-sitepuller_task-field_sitepuller_pull_private'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -795,7 +800,8 @@ If the local database it not initialized, leave a copy of this database in the t
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password=xyz123 --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.
+Place that string here.<br \\>
+Once the field has been encrypted and stored you\'ll see \'(use the stored connect string)\' here which you can change to a new connect string if necessary.
 ',
     'display' => array(
       'default' => array(
@@ -830,7 +836,8 @@ Place that string here.
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_task_local_site'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_task_local_site'
   $field_instances['node-sitepuller_task-field_sitepuller_task_local_site'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
@@ -873,7 +880,8 @@ Place that string here.
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_task_local_sub'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_task_local_sub'
   $field_instances['node-sitepuller_task-field_sitepuller_task_local_sub'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -957,7 +965,8 @@ Place that string here.
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_task_remo_sub'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_task_remo_sub'
   $field_instances['node-sitepuller_task-field_sitepuller_task_remo_sub'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -1051,18 +1060,19 @@ It is generally something like private/files or ../../../drupal_files (above <si
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.
+Place that string here.<br \\>
+Once the field has been encrypted and stored you\'ll see \'(use the stored connect string)\' here which you can change to a new connect string if necessary.
+
 ');
   t('String used to connect to the database for this remote subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password=xyz123 --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.
+Place that string here.<br \\>
+Once the field has been encrypted and stored you\'ll see \'(use the stored connect string)\' here which you can change to a new connect string if necessary.
 ');
   t('Temporary Directory');
-  t('This ssh user has sudo powers on this machine.');
   t('User');
-  t('User can sudo');
   t('Which subsite of the local site to replace?');
 
   return $field_instances;
