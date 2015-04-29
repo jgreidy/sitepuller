@@ -10,7 +10,8 @@
 function sitepuller_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_drush_make_file'
+  // Exported field_instance:
+  // 'node-sitepuller_local-field_sitepuller_drush_make_file'
   $field_instances['node-sitepuller_local-field_sitepuller_drush_make_file'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => NULL,
@@ -50,7 +51,8 @@ function sitepuller_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_local_site_name'
+  // Exported field_instance:
+  // 'node-sitepuller_local-field_sitepuller_local_site_name'
   $field_instances['node-sitepuller_local-field_sitepuller_local_site_name'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => NULL,
@@ -58,7 +60,7 @@ function sitepuller_field_default_field_instances() {
     'description' => 'Name of the site on the local machine. eg. main1',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -90,7 +92,8 @@ function sitepuller_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_local_site_root'
+  // Exported field_instance:
+  // 'node-sitepuller_local-field_sitepuller_local_site_root'
   $field_instances['node-sitepuller_local-field_sitepuller_local_site_root'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => NULL,
@@ -175,7 +178,8 @@ NO TRAILING SLASH',
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_use_make_file'
+  // Exported field_instance:
+  // 'node-sitepuller_local-field_sitepuller_use_make_file'
   $field_instances['node-sitepuller_local-field_sitepuller_use_make_file'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => array(
@@ -187,7 +191,7 @@ NO TRAILING SLASH',
     'description' => 'If the site does not already exist, user the drush make file below to prepare the site. Note: this does not create the database or initialize the site.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -218,7 +222,8 @@ NO TRAILING SLASH',
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_remote-field_sitepuller_remote_host'
+  // Exported field_instance:
+  // 'node-sitepuller_remote-field_sitepuller_remote_host'
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_host'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -226,11 +231,11 @@ NO TRAILING SLASH',
     'description' => 'Name of the remote server where the Drupal site is located.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -254,11 +259,12 @@ NO TRAILING SLASH',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_remote-field_sitepuller_remote_root'
+  // Exported field_instance:
+  // 'node-sitepuller_remote-field_sitepuller_remote_root'
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_root'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -271,7 +277,7 @@ NO TRAILING SLASH',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -299,7 +305,8 @@ NO TRAILING SLASH',
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_remote-field_sitepuller_remote_site'
+  // Exported field_instance:
+  // 'node-sitepuller_remote-field_sitepuller_remote_site'
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_site'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -307,11 +314,11 @@ NO TRAILING SLASH',
     'description' => 'Name of the Drupal site on the remote machine. ',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -335,11 +342,12 @@ NO TRAILING SLASH',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_remote-field_sitepuller_remote_tmp'
+  // Exported field_instance:
+  // 'node-sitepuller_remote-field_sitepuller_remote_tmp'
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_tmp'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => array(
@@ -355,7 +363,7 @@ NO TRAILING SLASH',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -383,7 +391,8 @@ NO TRAILING SLASH',
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_remote-field_sitepuller_remote_user'
+  // Exported field_instance:
+  // 'node-sitepuller_remote-field_sitepuller_remote_user'
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_user'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -392,7 +401,7 @@ NO TRAILING SLASH',
 See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -424,7 +433,8 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_local_db_connec'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_local_db_connec'
   $field_instances['node-sitepuller_task-field_sitepuller_local_db_connec'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
@@ -433,15 +443,16 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.
+Place that string here.<br \\>
+Once the field has been encrypted and stored you\'ll see \'(use the stored connect string)\' here which you can change to a new connect string if necessary.
+
 ',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 13,
+        'type' => 'hidden',
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -469,7 +480,8 @@ Place that string here.
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_private_files'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_private_files'
   $field_instances['node-sitepuller_task-field_sitepuller_private_files'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -482,11 +494,11 @@ Place that string here.
 It is generally something like private/files or ../../../drupal_files (above <site root>)',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -514,7 +526,8 @@ It is generally something like private/files or ../../../drupal_files (above <si
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_public_files'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_public_files'
   $field_instances['node-sitepuller_task-field_sitepuller_public_files'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -526,11 +539,11 @@ It is generally something like private/files or ../../../drupal_files (above <si
     'description' => 'Path to public files for a subsite. This path is relative to <site root>/sites/[subsite name]/',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -570,11 +583,11 @@ It is generally something like private/files or ../../../drupal_files (above <si
     'description' => 'Pull the Drupal code, libraries, modules, themes.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 3,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -601,7 +614,8 @@ It is generally something like private/files or ../../../drupal_files (above <si
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_database'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_pull_database'
   $field_instances['node-sitepuller_task-field_sitepuller_pull_database'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -615,11 +629,11 @@ If the local site is up and running, install this database in the local site.
 If the local database it not initialized, leave a copy of this database in the temporary folder for later use.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -646,7 +660,8 @@ If the local database it not initialized, leave a copy of this database in the t
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_drupal'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_pull_drupal'
   $field_instances['node-sitepuller_task-field_sitepuller_pull_drupal'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -658,11 +673,11 @@ If the local database it not initialized, leave a copy of this database in the t
     'description' => 'Pull the Drupal core code.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 9,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -701,11 +716,11 @@ If the local database it not initialized, leave a copy of this database in the t
     'description' => 'Pull the public files eg. /sites/default/files',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -732,7 +747,8 @@ If the local database it not initialized, leave a copy of this database in the t
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_private'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_pull_private'
   $field_instances['node-sitepuller_task-field_sitepuller_pull_private'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -744,11 +760,11 @@ If the local database it not initialized, leave a copy of this database in the t
     'description' => 'Copy the files from the Private file system. (Drupal 7 only.)',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 6,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -784,15 +800,15 @@ If the local database it not initialized, leave a copy of this database in the t
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password=xyz123 --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.
+Place that string here.<br \\>
+Once the field has been encrypted and stored you\'ll see \'(use the stored connect string)\' here which you can change to a new connect string if necessary.
 ',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 12,
+        'type' => 'hidden',
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -820,7 +836,8 @@ Place that string here.
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_task_local_site'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_task_local_site'
   $field_instances['node-sitepuller_task-field_sitepuller_task_local_site'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
@@ -828,13 +845,13 @@ Place that string here.
     'description' => 'Drupal site on the local machine that will be the target.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -863,7 +880,8 @@ Place that string here.
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_task_local_sub'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_task_local_sub'
   $field_instances['node-sitepuller_task-field_sitepuller_task_local_sub'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -875,11 +893,11 @@ Place that string here.
     'description' => 'Which subsite of the local site to replace?',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -907,7 +925,8 @@ Place that string here.
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_task_remo_site'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_task_remo_site'
   $field_instances['node-sitepuller_task-field_sitepuller_task_remo_site'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
@@ -915,7 +934,7 @@ Place that string here.
     'description' => 'Drupal site on a remote machine that will be the source.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
           'link' => FALSE,
@@ -946,7 +965,8 @@ Place that string here.
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_task_remo_sub'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_task_remo_sub'
   $field_instances['node-sitepuller_task-field_sitepuller_task_remo_sub'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -958,11 +978,11 @@ Place that string here.
     'description' => 'Select a subsite on the remote site.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1040,13 +1060,16 @@ It is generally something like private/files or ../../../drupal_files (above <si
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.
+Place that string here.<br \\>
+Once the field has been encrypted and stored you\'ll see \'(use the stored connect string)\' here which you can change to a new connect string if necessary.
+
 ');
   t('String used to connect to the database for this remote subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
 drush sql-connect <br />
 The result will look something like:  <br />
 mysql --user=drupaluser --password=xyz123 --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.
+Place that string here.<br \\>
+Once the field has been encrypted and stored you\'ll see \'(use the stored connect string)\' here which you can change to a new connect string if necessary.
 ');
   t('Temporary Directory');
   t('User');
