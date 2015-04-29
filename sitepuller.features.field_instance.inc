@@ -51,7 +51,8 @@ function sitepuller_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_local_site_name'
+  // Exported field_instance:
+  // 'node-sitepuller_local-field_sitepuller_local_site_name'
   $field_instances['node-sitepuller_local-field_sitepuller_local_site_name'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => NULL,
@@ -177,7 +178,8 @@ NO TRAILING SLASH',
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_use_make_file'
+  // Exported field_instance:
+  // 'node-sitepuller_local-field_sitepuller_use_make_file'
   $field_instances['node-sitepuller_local-field_sitepuller_use_make_file'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => array(
@@ -261,7 +263,8 @@ NO TRAILING SLASH',
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_remote-field_sitepuller_remote_root'
+  // Exported field_instance:
+  // 'node-sitepuller_remote-field_sitepuller_remote_root'
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_root'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -388,7 +391,8 @@ NO TRAILING SLASH',
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_remote-field_sitepuller_remote_user'
+  // Exported field_instance:
+  // 'node-sitepuller_remote-field_sitepuller_remote_user'
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_user'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
