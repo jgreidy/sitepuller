@@ -462,8 +462,8 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_local_db_connec',
-    'label' => 'Local Database Connection',
+    'field_name' => 'field_sitepuller_loc_db_con',
+    'label' => 'Local Database Connection String',
     'required' => 1,
     'settings' => array(
       'text_processing' => 0,
@@ -473,10 +473,10 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'rows' => 3,
       ),
-      'type' => 'text_textfield',
-      'weight' => 6,
+      'type' => 'text_textarea',
+      'weight' => 8,
     ),
   );
 
@@ -522,7 +522,7 @@ It is generally something like private/files or ../../../drupal_files (above <si
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 15,
     ),
   );
 
@@ -567,7 +567,7 @@ It is generally something like private/files or ../../../drupal_files (above <si
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 13,
     ),
   );
 
@@ -610,7 +610,7 @@ It is generally something like private/files or ../../../drupal_files (above <si
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
@@ -656,7 +656,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 9,
+      'weight' => 11,
     ),
   );
 
@@ -700,7 +700,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 7,
+      'weight' => 9,
     ),
   );
 
@@ -743,7 +743,7 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 10,
+      'weight' => 12,
     ),
   );
 
@@ -787,12 +787,13 @@ If the local database it not initialized, leave a copy of this database in the t
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 12,
+      'weight' => 14,
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_remote_db'
-  $field_instances['node-sitepuller_task-field_sitepuller_remote_db'] = array(
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_remo_db_con'
+  $field_instances['node-sitepuller_task-field_sitepuller_remo_db_con'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
     'deleted' => 0,
@@ -808,7 +809,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
