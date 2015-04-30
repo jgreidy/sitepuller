@@ -280,13 +280,13 @@ function sitepuller_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_sitepuller_remote_db'
-  $field_bases['field_sitepuller_remote_db'] = array(
+  // Exported field_base: 'field_sitepuller_remo_db_con'
+  $field_bases['field_sitepuller_remo_db_con'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_sitepuller_remote_db',
+    'field_name' => 'field_sitepuller_remo_db_con',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -294,11 +294,9 @@ function sitepuller_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_sitepuller_remote_host'

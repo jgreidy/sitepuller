@@ -433,26 +433,24 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
     ),
   );
 
-  // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_local_db_connec'
-  $field_instances['node-sitepuller_task-field_sitepuller_local_db_connec'] = array(
+  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_loc_db_con'
+  $field_instances['node-sitepuller_task-field_sitepuller_loc_db_con'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'String used to connect to the database for this local subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
+    'description' => 'String used to connect to the database for this remote subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
 drush sql-connect <br />
 The result will look something like:  <br />
-mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
+mysql --user=drupaluser --password=xyz123 --database=music --host=127.0.0.1 --port=33067 <br />
 Place that string here.<br \\>
 Once the field has been encrypted and stored you\'ll see \'(use the stored connect string)\' here which you can change to a new connect string if necessary.
-
 ',
     'display' => array(
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -819,8 +817,8 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_remote_db',
-    'label' => 'Remote Database Connection',
+    'field_name' => 'field_sitepuller_remo_db_con',
+    'label' => 'Remote Database Connection String',
     'required' => 1,
     'settings' => array(
       'text_processing' => 0,
@@ -830,10 +828,10 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'rows' => 3,
       ),
-      'type' => 'text_textfield',
-      'weight' => 3,
+      'type' => 'text_textarea',
+      'weight' => 4,
     ),
   );
 
@@ -877,7 +875,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
         'size' => 60,
       ),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -922,7 +920,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -1028,7 +1026,7 @@ If the local database it not initialized, leave a copy of this database in the t
   t('Drupal site on the local machine that will be the target.');
   t('Hostname');
   t('If the site does not already exist, user the drush make file below to prepare the site. Note: this does not create the database or initialize the site.');
-  t('Local Database Connection');
+  t('Local Database Connection String');
   t('Local Site');
   t('Local Subsite');
   t('Name of ssh user on the remote machine. You must be set up to ssh to the remote machine without a password prompt. 
@@ -1050,21 +1048,13 @@ It is generally something like private/files or ../../../drupal_files (above <si
   t('Pull the Drupal code, libraries, modules, themes.');
   t('Pull the Drupal core code.');
   t('Pull the public files eg. /sites/default/files');
-  t('Remote Database Connection');
+  t('Remote Database Connection String');
   t('Remote Site');
   t('Remote Subsite');
   t('Select a subsite on the remote site.');
   t('Site Name');
   t('Site Root Directory');
   t('Site name');
-  t('String used to connect to the database for this local subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
-drush sql-connect <br />
-The result will look something like:  <br />
-mysql --user=drupaluser --password= --database=music --host=127.0.0.1 --port=33067 <br />
-Place that string here.<br \\>
-Once the field has been encrypted and stored you\'ll see \'(use the stored connect string)\' here which you can change to a new connect string if necessary.
-
-');
   t('String used to connect to the database for this remote subsite. You can get this by going to the sites/subsite and typing this at the command line: <br />
 drush sql-connect <br />
 The result will look something like:  <br />
