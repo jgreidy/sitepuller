@@ -98,6 +98,46 @@ function sitepuller_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['empty'] = TRUE;
   $handler->display->display_options['header']['area_text_custom']['content'] = '<a href=/node/add/sitepuller-task>Add a task...</a>';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = 'Task Title';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = 'Edit Task';
+  $handler->display->display_options['fields']['edit_node']['text'] = 'edit';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = 'Run Task';
+  $handler->display->display_options['fields']['nid']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['nid']['alter']['text'] = 'Create Pull Script';
+  $handler->display->display_options['fields']['nid']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nid']['alter']['path'] = 'sitepuller_tools/[nid]/run';
+  /* Field: Content: Site name */
+  $handler->display->display_options['fields']['field_sitepuller_local_site_name']['id'] = 'field_sitepuller_local_site_name';
+  $handler->display->display_options['fields']['field_sitepuller_local_site_name']['table'] = 'field_data_field_sitepuller_local_site_name';
+  $handler->display->display_options['fields']['field_sitepuller_local_site_name']['field'] = 'field_sitepuller_local_site_name';
+  $handler->display->display_options['fields']['field_sitepuller_local_site_name']['relationship'] = 'field_sitepuller_task_local_site_target_id';
+  $handler->display->display_options['fields']['field_sitepuller_local_site_name']['label'] = 'Local Site name';
+  $handler->display->display_options['fields']['field_sitepuller_local_site_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_sitepuller_local_site_name']['type'] = 'text_plain';
+  /* Field: Content: Temporary Directory */
+  $handler->display->display_options['fields']['field_sitepuller_local_tmp']['id'] = 'field_sitepuller_local_tmp';
+  $handler->display->display_options['fields']['field_sitepuller_local_tmp']['table'] = 'field_data_field_sitepuller_local_tmp';
+  $handler->display->display_options['fields']['field_sitepuller_local_tmp']['field'] = 'field_sitepuller_local_tmp';
+  $handler->display->display_options['fields']['field_sitepuller_local_tmp']['relationship'] = 'field_sitepuller_task_local_site_target_id';
+  $handler->display->display_options['fields']['field_sitepuller_local_tmp']['label'] = 'Path to Pull Script';
+  $handler->display->display_options['fields']['field_sitepuller_local_tmp']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_sitepuller_local_tmp']['alter']['text'] = '[field_sitepuller_local_tmp-value]/sitepuller/[field_sitepuller_local_site_name]/scripts/sitepuller.sh';
+  $handler->display->display_options['fields']['field_sitepuller_local_tmp']['type'] = 'text_plain';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
