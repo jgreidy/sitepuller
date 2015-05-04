@@ -65,7 +65,8 @@ function sitepuller_default_rules_configuration() {
             "PROVIDE" : { "sitepuller_tools_message" : { "sitepuller_tools_message" : "Message" } }
           }
         },
-        { "drupal_message" : { "message" : "[sitepuller-tools-message:value]" } }
+        { "drupal_message" : { "message" : "[sitepuller-tools-message:value]" } },
+        { "redirect" : { "url" : "sitepuller_tools\\/[node:nid]\\/run", "destination" : "1" } }
       ]
     }
   }');
