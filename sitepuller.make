@@ -4,9 +4,9 @@ api = 2
 
 ; Modules
 
-projects[ctools][version] = "1.7"
+projects[ctools][version] = "1.9"
 
-projects[composer_manager][version] = "1.7"
+projects[composer_manager][version] = "1.8"
 
 projects[devel][version] = "1.5"
 
