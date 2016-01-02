@@ -11,7 +11,7 @@ function sitepuller_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'node-sitepuller_local-field_sitepuller_drush_make_file'
+  // 'node-sitepuller_local-field_sitepuller_drush_make_file'.
   $field_instances['node-sitepuller_local-field_sitepuller_drush_make_file'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => NULL,
@@ -52,7 +52,7 @@ function sitepuller_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_local-field_sitepuller_local_site_name'
+  // 'node-sitepuller_local-field_sitepuller_local_site_name'.
   $field_instances['node-sitepuller_local-field_sitepuller_local_site_name'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => NULL,
@@ -93,7 +93,7 @@ function sitepuller_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_local-field_sitepuller_local_site_root'
+  // 'node-sitepuller_local-field_sitepuller_local_site_root'.
   $field_instances['node-sitepuller_local-field_sitepuller_local_site_root'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => NULL,
@@ -134,7 +134,8 @@ NO TRAILING SLASH',
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_local-field_sitepuller_local_tmp'
+  // Exported field_instance:
+  // 'node-sitepuller_local-field_sitepuller_local_tmp'.
   $field_instances['node-sitepuller_local-field_sitepuller_local_tmp'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => array(
@@ -179,7 +180,7 @@ NO TRAILING SLASH',
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_local-field_sitepuller_use_make_file'
+  // 'node-sitepuller_local-field_sitepuller_use_make_file'.
   $field_instances['node-sitepuller_local-field_sitepuller_use_make_file'] = array(
     'bundle' => 'sitepuller_local',
     'default_value' => array(
@@ -223,7 +224,7 @@ NO TRAILING SLASH',
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_remote-field_sitepuller_remote_host'
+  // 'node-sitepuller_remote-field_sitepuller_remote_host'.
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_host'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -264,7 +265,7 @@ NO TRAILING SLASH',
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_remote-field_sitepuller_remote_root'
+  // 'node-sitepuller_remote-field_sitepuller_remote_root'.
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_root'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -306,7 +307,7 @@ NO TRAILING SLASH',
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_remote-field_sitepuller_remote_site'
+  // 'node-sitepuller_remote-field_sitepuller_remote_site'.
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_site'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -347,7 +348,7 @@ NO TRAILING SLASH',
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_remote-field_sitepuller_remote_tmp'
+  // 'node-sitepuller_remote-field_sitepuller_remote_tmp'.
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_tmp'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => array(
@@ -392,7 +393,7 @@ NO TRAILING SLASH',
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_remote-field_sitepuller_remote_user'
+  // 'node-sitepuller_remote-field_sitepuller_remote_user'.
   $field_instances['node-sitepuller_remote-field_sitepuller_remote_user'] = array(
     'bundle' => 'sitepuller_remote',
     'default_value' => NULL,
@@ -433,7 +434,8 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_loc_db_con'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_loc_db_con'.
   $field_instances['node-sitepuller_task-field_sitepuller_loc_db_con'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
@@ -479,7 +481,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_private_files'
+  // 'node-sitepuller_task-field_sitepuller_private_files'.
   $field_instances['node-sitepuller_task-field_sitepuller_private_files'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -525,7 +527,7 @@ It is generally something like private/files or ../../../drupal_files (above <si
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_public_files'
+  // 'node-sitepuller_task-field_sitepuller_public_files'.
   $field_instances['node-sitepuller_task-field_sitepuller_public_files'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -569,7 +571,7 @@ It is generally something like private/files or ../../../drupal_files (above <si
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_code'
+  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_code'.
   $field_instances['node-sitepuller_task-field_sitepuller_pull_code'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -613,7 +615,7 @@ It is generally something like private/files or ../../../drupal_files (above <si
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_pull_database'
+  // 'node-sitepuller_task-field_sitepuller_pull_database'.
   $field_instances['node-sitepuller_task-field_sitepuller_pull_database'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -659,7 +661,7 @@ If the local database it not initialized, leave a copy of this database in the t
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_pull_drupal'
+  // 'node-sitepuller_task-field_sitepuller_pull_drupal'.
   $field_instances['node-sitepuller_task-field_sitepuller_pull_drupal'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -702,7 +704,8 @@ If the local database it not initialized, leave a copy of this database in the t
     ),
   );
 
-  // Exported field_instance: 'node-sitepuller_task-field_sitepuller_pull_files'
+  // Exported field_instance:
+  // 'node-sitepuller_task-field_sitepuller_pull_files'.
   $field_instances['node-sitepuller_task-field_sitepuller_pull_files'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -746,7 +749,7 @@ If the local database it not initialized, leave a copy of this database in the t
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_pull_private'
+  // 'node-sitepuller_task-field_sitepuller_pull_private'.
   $field_instances['node-sitepuller_task-field_sitepuller_pull_private'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -790,7 +793,7 @@ If the local database it not initialized, leave a copy of this database in the t
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_remo_db_con'
+  // 'node-sitepuller_task-field_sitepuller_remo_db_con'.
   $field_instances['node-sitepuller_task-field_sitepuller_remo_db_con'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
@@ -836,7 +839,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_task_local_site'
+  // 'node-sitepuller_task-field_sitepuller_task_local_site'.
   $field_instances['node-sitepuller_task-field_sitepuller_task_local_site'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
@@ -880,7 +883,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_task_local_sub'
+  // 'node-sitepuller_task-field_sitepuller_task_local_sub'.
   $field_instances['node-sitepuller_task-field_sitepuller_task_local_sub'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(
@@ -925,7 +928,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_task_remo_site'
+  // 'node-sitepuller_task-field_sitepuller_task_remo_site'.
   $field_instances['node-sitepuller_task-field_sitepuller_task_remo_site'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => NULL,
@@ -965,7 +968,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_task-field_sitepuller_task_remo_sub'
+  // 'node-sitepuller_task-field_sitepuller_task_remo_sub'.
   $field_instances['node-sitepuller_task-field_sitepuller_task_remo_sub'] = array(
     'bundle' => 'sitepuller_task',
     'default_value' => array(

@@ -10,7 +10,7 @@
 function sitepuller_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_sitepuller_drush_make_file'
+  // Exported field_base: 'field_sitepuller_drush_make_file'.
   $field_bases['field_sitepuller_drush_make_file'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -31,7 +31,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_loc_db_con'
+  // Exported field_base: 'field_sitepuller_loc_db_con'.
   $field_bases['field_sitepuller_loc_db_con'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -50,7 +50,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_sitepuller_local_site_name'
+  // Exported field_base: 'field_sitepuller_local_site_name'.
   $field_bases['field_sitepuller_local_site_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -71,7 +71,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_local_site_root'
+  // Exported field_base: 'field_sitepuller_local_site_root'.
   $field_bases['field_sitepuller_local_site_root'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -92,7 +92,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_local_tmp'
+  // Exported field_base: 'field_sitepuller_local_tmp'.
   $field_bases['field_sitepuller_local_tmp'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -113,7 +113,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_private_files'
+  // Exported field_base: 'field_sitepuller_private_files'.
   $field_bases['field_sitepuller_private_files'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -134,7 +134,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_public_files'
+  // Exported field_base: 'field_sitepuller_public_files'.
   $field_bases['field_sitepuller_public_files'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -155,7 +155,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_pull_code'
+  // Exported field_base: 'field_sitepuller_pull_code'.
   $field_bases['field_sitepuller_pull_code'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -180,7 +180,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_sitepuller_pull_database'
+  // Exported field_base: 'field_sitepuller_pull_database'.
   $field_bases['field_sitepuller_pull_database'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -205,7 +205,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_sitepuller_pull_drupal'
+  // Exported field_base: 'field_sitepuller_pull_drupal'.
   $field_bases['field_sitepuller_pull_drupal'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -230,7 +230,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_sitepuller_pull_files'
+  // Exported field_base: 'field_sitepuller_pull_files'.
   $field_bases['field_sitepuller_pull_files'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -255,7 +255,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_sitepuller_pull_private'
+  // Exported field_base: 'field_sitepuller_pull_private'.
   $field_bases['field_sitepuller_pull_private'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -280,7 +280,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_sitepuller_remo_db_con'
+  // Exported field_base: 'field_sitepuller_remo_db_con'.
   $field_bases['field_sitepuller_remo_db_con'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -299,7 +299,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_sitepuller_remote_host'
+  // Exported field_base: 'field_sitepuller_remote_host'.
   $field_bases['field_sitepuller_remote_host'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -320,7 +320,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_remote_root'
+  // Exported field_base: 'field_sitepuller_remote_root'.
   $field_bases['field_sitepuller_remote_root'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -341,7 +341,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_remote_site'
+  // Exported field_base: 'field_sitepuller_remote_site'.
   $field_bases['field_sitepuller_remote_site'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -362,7 +362,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_remote_tmp'
+  // Exported field_base: 'field_sitepuller_remote_tmp'.
   $field_bases['field_sitepuller_remote_tmp'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -383,7 +383,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_remote_user'
+  // Exported field_base: 'field_sitepuller_remote_user'.
   $field_bases['field_sitepuller_remote_user'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -404,7 +404,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_task_local_site'
+  // Exported field_base: 'field_sitepuller_task_local_site'.
   $field_bases['field_sitepuller_task_local_site'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -436,7 +436,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_sitepuller_task_local_sub'
+  // Exported field_base: 'field_sitepuller_task_local_sub'.
   $field_bases['field_sitepuller_task_local_sub'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -457,7 +457,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_task_remo_site'
+  // Exported field_base: 'field_sitepuller_task_remo_site'.
   $field_bases['field_sitepuller_task_remo_site'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -489,7 +489,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_sitepuller_task_remo_sub'
+  // Exported field_base: 'field_sitepuller_task_remo_sub'.
   $field_bases['field_sitepuller_task_remo_sub'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -510,7 +510,7 @@ function sitepuller_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_sitepuller_use_make_file'
+  // Exported field_base: 'field_sitepuller_use_make_file'.
   $field_bases['field_sitepuller_use_make_file'] = array(
     'active' => 1,
     'cardinality' => 1,
