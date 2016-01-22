@@ -132,3 +132,4 @@ features[variable][] = node_submitted_sitepuller_local
 features[variable][] = node_submitted_sitepuller_remote
 features[variable][] = node_submitted_sitepuller_task
 features[views_view][] = sitepuller_tasks
+project path = /Users/jgr25/Sites/devdesktop/sitepuller-dev2/sites/all/modules/sitepuller
