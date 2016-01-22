@@ -4,9 +4,9 @@ api = 2
 
 ; Modules
 
-projects[ctools][version] = "1.7"
+projects[ctools][version] = "1.9"
 
-projects[composer_manager][version] = "1.7"
+projects[composer_manager][version] = "1.8"
 
 projects[devel][version] = "1.5"
 
@@ -14,7 +14,7 @@ projects[entity][version] = "1.6"
 
 projects[entityreference][version] = "1.1"
 
-projects[features][version] = "2.5"
+projects[features][version] = "2.7"
 
 projects[rules][version] = "2.9"
 
@@ -27,4 +27,4 @@ projects[sitepuller_tools][version] = "master"
 
 projects[strongarm][version] = "2.0"
 
-projects[views][version] = "3.11"
+projects[views][version] = "3.13"
