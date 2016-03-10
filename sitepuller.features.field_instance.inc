@@ -937,13 +937,11 @@ NO TRAILING SLASH');
 If the local site is up and running, install this database in the local site.
 If the local database it not initialized, leave a copy of this database in the temporary folder for later use.');
   t('Copy the files from the Private file system. (Drupal 7 only.)');
-  t('Create an empty site using a drush make file');
   t('Directory where sitepuller can store temporary files on the local machine. eg. /tmp');
   t('Directory where sitepuller can store temporary files on the remote host machine.');
   t('Drupal site on a remote machine that will be the source.');
   t('Drupal site on the local machine that will be the target.');
   t('Hostname');
-  t('If the site does not already exist, user the drush make file below to prepare the site. Note: this does not create the database or initialize the site.');
   t('Local Database Connection String');
   t('Local Site');
   t('Local Subsite');
@@ -952,7 +950,6 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
   t('Name of the Drupal site on the remote machine. ');
   t('Name of the remote server where the Drupal site is located.');
   t('Name of the site on the local machine. eg. main1');
-  t('Path to drush make file');
   t('Path to private files for a subsite. This path is relative to <site root>/sites/[subsite name]/<br />
 It is generally something like private/files or ../../../drupal_files (above <site root>)');
   t('Path to public files for a subsite. This path is relative to <site root>/sites/[subsite name]/');
