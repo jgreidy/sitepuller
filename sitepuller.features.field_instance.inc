@@ -11,47 +11,6 @@ function sitepuller_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'node-sitepuller_local-field_sitepuller_drush_make_file'.
-  $field_instances['node-sitepuller_local-field_sitepuller_drush_make_file'] = array(
-    'bundle' => 'sitepuller_local',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_drush_make_file',
-    'label' => 'Path to drush make file',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance:
   // 'node-sitepuller_local-field_sitepuller_loc_db_con'.
   $field_instances['node-sitepuller_local-field_sitepuller_loc_db_con'] = array(
     'bundle' => 'sitepuller_local',
@@ -222,50 +181,6 @@ NO TRAILING SLASH',
       ),
       'type' => 'text_textfield',
       'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-sitepuller_local-field_sitepuller_use_make_file'.
-  $field_instances['node-sitepuller_local-field_sitepuller_use_make_file'] = array(
-    'bundle' => 'sitepuller_local',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'If the site does not already exist, user the drush make file below to prepare the site. Note: this does not create the database or initialize the site.',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_use_make_file',
-    'label' => 'Create an empty site using a drush make file',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 4,
     ),
   );
 
