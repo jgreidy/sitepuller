@@ -11,47 +11,6 @@ function sitepuller_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'node-sitepuller_local-field_sitepuller_drush_make_file'.
-  $field_instances['node-sitepuller_local-field_sitepuller_drush_make_file'] = array(
-    'bundle' => 'sitepuller_local',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_drush_make_file',
-    'label' => 'Path to drush make file',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance:
   // 'node-sitepuller_local-field_sitepuller_loc_db_con'.
   $field_instances['node-sitepuller_local-field_sitepuller_loc_db_con'] = array(
     'bundle' => 'sitepuller_local',
@@ -81,7 +40,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
     'entity_type' => 'node',
     'field_name' => 'field_sitepuller_loc_db_con',
     'label' => 'Local Database Connection String',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -226,50 +185,6 @@ NO TRAILING SLASH',
   );
 
   // Exported field_instance:
-  // 'node-sitepuller_local-field_sitepuller_use_make_file'.
-  $field_instances['node-sitepuller_local-field_sitepuller_use_make_file'] = array(
-    'bundle' => 'sitepuller_local',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'If the site does not already exist, user the drush make file below to prepare the site. Note: this does not create the database or initialize the site.',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sitepuller_use_make_file',
-    'label' => 'Create an empty site using a drush make file',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance:
   // 'node-sitepuller_remote-field_sitepuller_remo_db_con'.
   $field_instances['node-sitepuller_remote-field_sitepuller_remo_db_con'] = array(
     'bundle' => 'sitepuller_remote',
@@ -299,7 +214,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
     'entity_type' => 'node',
     'field_name' => 'field_sitepuller_remo_db_con',
     'label' => 'Remote Database Connection String',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -1022,13 +937,11 @@ NO TRAILING SLASH');
 If the local site is up and running, install this database in the local site.
 If the local database it not initialized, leave a copy of this database in the temporary folder for later use.');
   t('Copy the files from the Private file system. (Drupal 7 only.)');
-  t('Create an empty site using a drush make file');
   t('Directory where sitepuller can store temporary files on the local machine. eg. /tmp');
   t('Directory where sitepuller can store temporary files on the remote host machine.');
   t('Drupal site on a remote machine that will be the source.');
   t('Drupal site on the local machine that will be the target.');
   t('Hostname');
-  t('If the site does not already exist, user the drush make file below to prepare the site. Note: this does not create the database or initialize the site.');
   t('Local Database Connection String');
   t('Local Site');
   t('Local Subsite');
@@ -1037,7 +950,6 @@ See (Steps 1 - 3) of https://www.digitalocean.com/community/tutorials/how-to-set
   t('Name of the Drupal site on the remote machine. ');
   t('Name of the remote server where the Drupal site is located.');
   t('Name of the site on the local machine. eg. main1');
-  t('Path to drush make file');
   t('Path to private files for a subsite. This path is relative to <site root>/sites/[subsite name]/<br />
 It is generally something like private/files or ../../../drupal_files (above <site root>)');
   t('Path to public files for a subsite. This path is relative to <site root>/sites/[subsite name]/');
