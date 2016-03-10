@@ -40,7 +40,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
     'entity_type' => 'node',
     'field_name' => 'field_sitepuller_loc_db_con',
     'label' => 'Local Database Connection String',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -214,7 +214,7 @@ Once the field has been encrypted and stored you\'ll see \'(use the stored conne
     'entity_type' => 'node',
     'field_name' => 'field_sitepuller_remo_db_con',
     'label' => 'Remote Database Connection String',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
